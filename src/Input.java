@@ -13,7 +13,9 @@ public class Input {
         while (true) {
             try {
                 System.out.print(message + ": ");
-                return scanner.nextByte();
+                byte value = scanner.nextByte();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException i) {
                 System.out.println("Format error. Please enter a valid byte number.");
                 scanner.nextLine();
@@ -29,7 +31,9 @@ public class Input {
         while (true) {
             try {
                 System.out.println (message + " : ");
-                return scanner.nextInt();
+                int value = scanner.nextInt();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException i){
                 System.out.println("Format error. Please enter a valid integer");
                 scanner.nextLine();
@@ -43,7 +47,9 @@ public class Input {
         while (true) {
             try {
                 System.out.println(message + " : ");
-                return scanner.nextFloat();
+                float value = scanner.nextFloat();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException i) {
                 System.out.println ("Format error. Please enter a decimal number using a comma.");
                 scanner.nextLine();
@@ -57,7 +63,9 @@ public class Input {
         while (true) {
             try {
                 System.out.println(message + " : ");
-                return scanner.nextDouble();
+                double value = scanner.nextDouble();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException i) {
                 System.out.println ("Format error. Please enter a valid decimal number.");
                 scanner.nextLine();
