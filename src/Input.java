@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Input {
 
-    //crear objeto scanner
+
     static Scanner scanner = new Scanner(System.in);
 
-    //método byte
+
 
     public static byte readByte(String message) {
 
@@ -24,7 +24,7 @@ public class Input {
 
     }
 
-    //método int
+
 
     public static int readInt(String message) {
 
@@ -41,7 +41,7 @@ public class Input {
         }
 
     }
-    //método float
+
     public static float readFloat(String message) {
 
         while (true) {
@@ -57,7 +57,7 @@ public class Input {
         }
 
     }
-    //método double
+
     public static double readDouble(String message) {
 
         while (true) {
@@ -73,7 +73,7 @@ public class Input {
         }
 
     }
-    //método char
+
     public static char readChar(String message) {
        while (true) {
            try {
@@ -90,7 +90,7 @@ public class Input {
        }
     }
 
-    //método string
+
     public static String readString(String message) {
         while (true) {
             try {
@@ -106,7 +106,7 @@ public class Input {
         }
     }
 
-    //método y/n
+    
     public static boolean readYesNo(String message) {
         while (true) {
             try {
